@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String[] args) {
         Author scaryAuthor = new Author("Стивен", "Кинг");
-        Book scaryBook = new Book("Кладбище домашних животных", scaryAuthor, 1983);
+        Book scaryBook = new Book("Кладбище домашних животных ", scaryAuthor, 1983);
         Author fantasyAuthor = new Author("Роберт", "Сальваторэ");
         Book fantasyBook = new Book("Темный Эльф", fantasyAuthor, 1990);
         System.out.println("Книга: " + scaryBook.getNameBook());
