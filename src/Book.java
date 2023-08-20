@@ -37,7 +37,7 @@ public class Book {
             return false;
         }
         Book book = (Book) oneObject;
-        return yearRelease == book.yearRelease && java.util.Objects.equals(nameBook, book.nameBook) && java.util.Objects.equals(createAuthor, book.createAuthor);
+        return  yearRelease == book.yearRelease && java.util.Objects.equals(nameBook, book.nameBook) && java.util.Objects.equals(createAuthor, book.createAuthor);
     }
 
     public int hashCode() {
