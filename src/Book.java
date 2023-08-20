@@ -24,5 +24,26 @@ public class Book {
         this.yearRelease = year;
     }
 
+    @Override
+    public String toString() {
+        return nameBook + " " + createAuthor + " " + yearRelease;
+    }
+
+    public boolean equals(Object oneObject) {
+        if (this == oneObject) {
+            return true;
+        }
+        if (oneObject == null || getClass() != oneObject.getClass()) {
+            return false;
+        }
+        Book book = (Book) oneObject;
+        return yearRelease == book.yearRelease && java.util.Objects.equals(nameBook, book.nameBook) && java.util.Objects.equals(createAuthor, book.createAuthor);
+    }
+
+    public int hashCode() {
+        return java.util.Objects.hash(nameBook, createAuthor, yearRelease);
+    }
+
+
 }
 
